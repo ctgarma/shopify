@@ -4,34 +4,73 @@ body {
   font-family: sans-serif;
 }
 
-*, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.card {
 
+.card {
+  position:relative;
   
 }
-.col-4 {
-  width:25%;
-  float: left;
-  box-sizing: border-box;
-  display:inline-block;           
-  border-right:1px solid black;
-  border-bottom:1px solid black;
+
+
+.price {
+  font-size:1.5rem;
+}
+.sign {
+  height:2rem;
+  display:flex;
+  margin-left:20px;
+  color:#fff;
+
+}
+
+.sign div {
+  line-height: 2rem;
+  height:2rem;
+  padding:0px 2rem;
+}
+
+
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
+}
+
+.details {
+  display:flex;
+  margin:30px 20px 30px 20px;
+  justify-content: space-between;  
+  height:2rem;
+  line-height: 2rem;
+
+  align-items: flex-end;
+}
+
+  .col-4 {
+    width: 33.333%;
+    float: left;
+    box-sizing: border-box;
+    display:inline-block;           
+    border-right:1px solid #ddf2f3;
+    border-bottom:1px solid #ddf2f3;
 }
 
 .container {
+    width: 100%;
+    height: auto;
+    line-height: 0;
+    border-left:1px solid #ddf2f3;
+    border-top:1px solid #ddf2f3;
+    
+}
 
-  display: grid;
-	background-color: #000;
-	border: 1px solid #000;
-	grid-gap: 1px;
-	justify-self: center; 
-	max-width: 292px;
-	height: auto;
-	margin: 0 auto;
+.content {
+  padding:2rem;
+}
+
+
+.clearboth {
+    clear: both;
 }
 
 
