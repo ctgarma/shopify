@@ -3,6 +3,7 @@ import './App.css';
 import data from './products.json';
 import Card from './components/Card';
 import Combo from './components/Combo';
+import Banner from './components/Banner';
 
 let arr =new Set();
 const items = data.map(info => {
@@ -38,12 +39,6 @@ class App extends Component {
       <div className="App">
         <header className="App-header">     
           Women's Top
-          {/* <select value="filter by size" onChange={this.onChange.bind(this)} className="form-control">
-          <option value="select">filter by size</option>
-          <option value="First">First</option>
-          <option value="Second">Second</option>
-          <option value="Third">Third</option>
-        </select>  */}
         <Combo size={arrSizes} onChange={this.filter}/>
         </header>
         <div className="content">
@@ -52,7 +47,9 @@ class App extends Component {
           <br className="clearboth" />
         </div>
         </div>  
+        <Banner />
       </div>
+      
     );
   }
 }

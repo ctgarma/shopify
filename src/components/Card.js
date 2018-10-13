@@ -10,7 +10,7 @@ class Card extends Component {
 
     const items = filtered.map(item => {
       return (
-        <div key={item.id} className="card col-4 medium-6">
+        <div key={item.index} className="card col-4 medium-6">
           <div className="card-image">
             <img src={`/images/${item.productImage}`} alt={item.productImage} />
           </div>

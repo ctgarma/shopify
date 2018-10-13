@@ -2,7 +2,7 @@
   {
     "index": 0,
     "isSale": true,
-    "isExclusive": false,
+    "isExclusive": true,
     "price": "$18.88",
     "productImage": "product-1.jpg",
     "productName": "Striped shirt",

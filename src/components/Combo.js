@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 function Combo(props){
 
@@ -7,9 +7,9 @@ function Combo(props){
     const items = options.map(item=><option key={item} value={item}>{item}</option>);
     return (
         <select onChange={props.onChange}>
-        {items}
+            <option key="filtered by size" value="">filtered by size</option>
+            {items}
         </select>);
-
 }
 
 export default Combo;
